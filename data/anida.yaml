@@ -1,0 +1,46 @@
+language: "french"
+
+categories:
+  - Programme
+  - PROGRAMMES_FINALISES
+  - PROGRAMMES_EN_COURS
+
+conversations:
+  - - "Qu'est-ce que l'Agence a accompli depuis sa création ?"
+    - "Depuis sa création, l’Agence a gagné la confiance de nombreux partenaires techniques et financiers qui ont augmenté leur contribution financière dans les programmes mis en œuvre."
+
+  - - "Parlez-moi du Projet d’Appui à la réduction de la migration au Sénégal."
+    - "Le Projet d’Appui à la réduction de la migration à travers la Création d’Emplois Ruraux au Sénégal (PACERSEN) est financé par l’Union Européenne à hauteur de 20 millions d’euros. Il est exécuté en partenariat avec l’Agence Espagnole de Coopération Internationale au Développement (AECID) et l’Agence Italienne de Coopération au Développement (AICS), avec l’Agence nationale d’Insertion et Développement agricole (ANIDA) étant l’agence d’exécution."
+
+  - - "Quels sont les résultats du PACERSEN ?"
+    - "Au total, 197 fermes agricoles Naatangué ont été réceptionnées, avec une répartition par région et département des réalisations par composante."
+
+  - - "Combien d'emplois ont été créés par le PACERSEN ?"
+    - "Le projet a permis la création de 2641 emplois directs et environ 5 000 emplois indirects seront générés par l’exploitation des fermes."
+
+  - - "Qu'est-ce que le Programme d’Aménagement de Fermes Intégrées Valorisant les Energies Renouvelables et Développement de Filières Horticoles (PAFIVER-FH) ?"
+    - "L’objectif général du PAFIVER-FH (2021-2023) est de contribuer durablement à la réalisation des projets agricoles à haute valeur ajoutée pour améliorer la sécurité alimentaire des populations, réduire les importations, accroître l’offre en fruits et légumes et augmenter la création d’emploi en milieu rural."
+
+  - - "Quels sont les objectifs spécifiques du PAFIVER-FH ?"
+    - "Le programme va permettre la réalisation de 70 fermes villageoises dont 10 intégrant l’agriculture et l’élevage, 1700 fermes familiales composées de 53% de fermes individuelles et 47% sous formes de 'Waar-wi'. Il va également consolider plus de 60 fermes et aires agricoles émergentes avec l’introduction du pompage solaire."
+
+  - - "Donnez-moi des informations sur le PASA/LouMaKaf."
+    - "Le PASA/LouMaKaf a obtenu de la BAD une phase additionnelle d’une année, qui devait s’achever en septembre 2022. Finalement, la convention a été signée en décembre 2022 pour se terminer en fin septembre 2023. Les anciens DAO relatifs à la construction de magasins dans 6 fermes, de solarisation de 12 fermes et d’acquisition d’équipements de secours et d’intrants ont été actualisés et soumis à l’appréciation de la BAD."
+
+  - - "Quelles sont les dernières nouvelles concernant le PAPSEN ?"
+    - "Pour les 11 fermes restantes sur les 15 du programme prioritaire, le marché avait été résilié suite à la défaillance des entreprises. Après la relance des marchés, les travaux ont démarré à nouveau. Les clôtures, bâtiments et réseau structurant sont réalisés à 90% et les forages sont en cours de développement."
+
+  - - "Quels sont les progrès des 55 sites restants du PAPSEN ?"
+    - "Pour les 55 sites restants du programme, les entreprises se sont mobilisées pour les 6 lots, les travaux sont en cours sur 37 sites. On compte 22 micros-forages, 2 forages, 14 puits réalisés et 10 forages régénérés. Les travaux de génie civil et les bâtiments ont un taux d’exécution de 85% sur 10 sites et entre 20 et 40% sur 20 autres."
+
+  - - "Quels sont les avancements du projet PARIIS ?"
+    - "Les travaux ont démarré sur l’ensemble des sites disponibles. Les trois fermes Thilor, Ndiankhang et Thiamène Walo sont terminées et réceptionnées entièrement. Les sites de Ndioudiouf et de Guelor sont à plus de 50% pour le système de pompage avec la cabine terminée, les approvisionnements sont en cours, les forages sont réceptionnés, les réseaux en cours de validation et d’implantation. Les clôtures sont en cours de réalisation notamment à Ndioudiouf."
+
+  - - "Quels sites ont été remplacés dans le projet PARIIS ?"
+    - "Le site de Keur Sette Diakhou (salinité du forage) a été substitué par Darou Waniane. Pour Keur Mbaye Babou de Touba Toul (litige) et Fandor, les prospections ont été faites à Noto Gouye Diama, un retour des actes signés des ayants droits est attendu afin de poursuivre."
+
+  - - "Que pouvez-vous me dire sur le PROVALE-CV ?"
+    - "La convention de partenariat avec le PROVALE-CV vise à appuyer la réalisation et la valorisation de 320 fermes modernes horticoles intégrées à partir de forages à base d’énergie solaire en appui à l’entrepreneuriat et l’emploi des jeunes dans plusieurs régions. Aujourd’hui, 129 fermes sont finalisées, et le reste est en cours de réalisation à des niveaux d’avancement différents."
+
+  - - "Combien de fermes ont été finalisées dans le cadre du PROVALE-CV ?"
+    - "129 fermes sont finalisées, soit 62 dans la zone sud et 67 dans la zone centre. Le reste des fermes est en cours de réalisation à des niveaux d’avancement différents."

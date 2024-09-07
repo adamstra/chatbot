@@ -1,0 +1,43 @@
+language: "fr"
+trainer: "chatterbot.trainers.ListTrainer"
+
+logic_adapters:
+  - "chatterbot.logic.BestMatch"
+  - "chatterbot.logic.MathematicalEvaluation"
+  - "chatterbot.logic.TimeLogicAdapter"
+
+preprocessors:
+  - "chatterbot.preprocessors.clean_whitespace"
+
+database_uri: "sqlite:///database.sqlite3"
+
+categories:
+  général:
+    - - "Bonjour, pouvez-vous me parler de l'ADEPME ?"
+      - "L'Agence de Développement et d’Encadrement des Petites et Moyennes Entreprises (ADEPME) est une structure gouvernementale créée en 2001. Elle a pour mission principale d’assister et d’encadrer les petites et moyennes entreprises ainsi que les micro-entreprises au Sénégal."
+    - - "Quels sont les objectifs de l'ADEPME ?"
+      - "Les objectifs de l'ADEPME incluent : assurer le service public pour la structuration des PME, promouvoir l’esprit d’entreprise et l’innovation, faciliter l’accès aux services non financiers et financiers pour les PME, et améliorer la gouvernance et la culture d’entreprise de l’agence."
+    - - "Quels sont les services offerts par l'ADEPME ?"
+      - "L'ADEPME offre des services d’encadrement et de conseil pour les PME et les micro-entreprises, facilite l’accès à l’information stratégique, et met en place des fonds à frais partagés, des services de cloud computing, et une plateforme pour promouvoir les produits made in Sénégal."
+
+  ITC:
+    - - "Pouvez-vous m'expliquer l'analyse comparative de l'ITC ?"
+      - "L'analyse comparative de l'ITC est un programme qui aide les OPCs à améliorer leur performance en mesurant l’efficacité et l’efficience de leurs pratiques commerciales. Les résultats de chaque OPC sont comparés aux normes de bonne pratique représentées par un point de référence de 100 %."
+    - - "Quels sont les axes de performance de l'analyse comparative de l'ITC ?"
+      - "Les quatre axes de performance de l'analyse comparative de l'ITC sont : Leadership et orientation stratégique, Ressources et Processus, Produits et services, et Analyses et résultats."
+    - - "Quelles sont les étapes du programme AIM de l'ITC ?"
+      - "Le programme AIM (Assess, Improve, Measure) de l'ITC comprend trois étapes : l’évaluation (analyser l’efficacité et l’efficience des institutions d’appui au commerce), l’amélioration (préparer et mettre en œuvre une Feuille de Route pour l’Amélioration de la Performance), et la mesure (définir un système de mesure de la performance efficace)."
+
+  Services:
+    - - "Quels types de services l'ADEPME propose-t-elle ?"
+      - "L'ADEPME propose des services variés comme : des diagnostics d'entreprises, des formations, des conseils en gestion et stratégie, l'accompagnement dans la recherche de financement, et l'aide à la mise en relation avec des partenaires potentiels."
+    - - "Comment l'ADEPME aide-t-elle à la digitalisation des PME ?"
+      - "L'ADEPME aide à la digitalisation des PME en offrant des services de cloud computing, en organisant des formations en TIC, et en fournissant des outils numériques pour améliorer la gestion et la compétitivité des entreprises."
+    - - "Quels sont les projets phares de l'ADEPME pour les années à venir ?"
+      - "Les projets phares de l'ADEPME incluent le développement d'un incubateur pour les start-ups, la création d'un fonds de soutien pour les entreprises innovantes, et l'extension des services de conseil et de formation à travers le pays."
+    - - "Qu'est-ce que le programme AIM de l'ITC ?"
+      - "Le programme AIM (Assess, Improve, Measure) de l'ITC est un cadre d'amélioration continue pour les organisations d'appui au commerce. Il permet aux institutions de mesurer leur performance, d'identifier les domaines nécessitant des améliorations, et de mettre en œuvre des plans d'action pour atteindre les objectifs fixés."
+    - - "Quels sont les résultats attendus de l'analyse comparative de l'ITC ?"
+      - "Les résultats attendus de l'analyse comparative de l'ITC sont une meilleure compréhension des forces et faiblesses des OPCs, des recommandations pour améliorer les services, et des benchmarks pour mesurer les progrès réalisés au fil du temps."
+    - - "Comment l'ADEPME soutient-elle les femmes entrepreneurs ?"
+      - "L'ADEPME soutient les femmes entrepreneurs en leur offrant des programmes de formation spécifiques, en facilitant l'accès au financement, et en organisant des événements de networking pour les aider à se connecter avec d'autres entrepreneurs et investisseurs."

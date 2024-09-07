@@ -1,0 +1,47 @@
+language: "fr"
+trainer: "chatterbot.trainers.ListTrainer"
+
+logic_adapters:
+  - "chatterbot.logic.BestMatch"
+  - "chatterbot.logic.MathematicalEvaluation"
+  - "chatterbot.logic.TimeLogicAdapter"
+
+preprocessors:
+  - "chatterbot.preprocessors.clean_whitespace"
+
+database_uri: "sqlite:///database.sqlite3"
+
+categories:
+  général:
+    - - "Bonjour"
+      - "Bonjour, comment puis-je vous aider aujourd'hui ?"
+    - - "Qu'est-ce que la DER/FJ ?"
+      - "La DER/FJ, ou Délégation à l’Entrepreneuriat Rapide pour les Femmes et les Jeunes, est un organisme qui soutient les entrepreneurs sénégalais à travers des programmes de financement et d'accompagnement technique."
+    - - "Comment puis-je contacter la DER/FJ ?"
+      - "Vous pouvez contacter la DER/FJ via leur site web officiel ou en visitant leurs bureaux situés dans les différentes régions du Sénégal."
+
+  objectifs:
+    - - "Quels sont les objectifs de la DER/FJ ?"
+      - "Les objectifs de la DER/FJ incluent le soutien à l'auto-emploi des jeunes et des femmes, l'assistance technique aux porteurs de projets, et le renforcement des capacités techniques et managériales des bénéficiaires."
+
+  financements:
+    - - "Quels types de financements offre la DER/FJ ?"
+      - "La DER/FJ offre divers types de financements, incluant le nano-crédit pour les petites entreprises, des crédits pour les TPME et startups, ainsi que des financements pour des projets structurants."
+    - - "Quel est le montant des crédits disponibles ?"
+      - "Les montants des crédits disponibles varient de 10 000 FCFA à 50 millions FCFA, en fonction des besoins et des types de projets."
+
+  soutien_innovation:
+    - - "Comment la DER/FJ soutient-elle l'innovation ?"
+      - "La DER/FJ soutient l'innovation à travers des programmes comme le Fonds de Soutien à l'Innovation (FSI) et des initiatives comme LionsTech Invest, qui financent et accompagnent les startups technologiques."
+
+  programmes_non_financiers:
+    - - "Quels sont les programmes non financiers de la DER/FJ ?"
+      - "Parmi les programmes non financiers, on trouve l'accompagnement technique, des programmes de renforcement de capacités, et des initiatives de soutien à l'entrepreneuriat étudiant comme SEEDS et Fabrique des Startupers."
+
+  couverture_géographique:
+    - - "Où la DER/FJ intervient-elle géographiquement ?"
+      - "La DER/FJ intervient sur l'ensemble du territoire sénégalais, avec un focus particulier sur des zones spécifiques comme Saint-Louis, Dagana, Podor, Fatick, Foundiougne, et Nioro du Rip."
+
+  résultats:
+    - - "Quels sont les résultats obtenus par la DER/FJ en cinq ans ?"
+      - "En cinq ans, la DER/FJ a financé 228 570 bénéficiaires, octroyé 492 997 crédits, formé 12 557 bénéficiaires, et investi 111,8 milliards FCFA en faveur des entrepreneurs."

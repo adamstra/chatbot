@@ -1,0 +1,48 @@
+language: "fr"
+pipeline:
+  - name: "chatterbot.logic.BestMatch"
+  - name: "chatterbot.logic.MathematicalEvaluation"
+  - name: "chatterbot.logic.TimeLogicAdapter"
+  - name: "chatterbot.logic.UnitConversion"
+
+trainer: "chatterbot.trainers.ListTrainer"
+
+storage_adapter: "chatterbot.storage.SQLStorageAdapter"
+database_uri: "sqlite:///database.sqlite3"
+
+input_adapter: "chatterbot.input.VariableInputTypeAdapter"
+output_adapter: "chatterbot.output.OutputAdapter"
+
+logic_adapters:
+  - "chatterbot.logic.BestMatch"
+
+conversations:
+  missions:
+    - - "Quelle est la mission de l'APIX ?"
+      - "L'APIX accompagne les investisseurs étrangers et nationaux dans la réalisation de leurs projets au Sénégal, promeut l'image économique et l'attractivité du Sénégal, pilote l'amélioration de l'environnement des affaires, et contribue à la mise à niveau des infrastructures."
+    - - "Quelles sont les valeurs de l'APIX ?"
+      - "Les valeurs de l'APIX sont la rigueur, l'efficacité et la confidentialité."
+
+  reformes:
+    - - "Quels types de réformes l'APIX met-elle en œuvre ?"
+      - "L'APIX met en œuvre des réformes telles que l'incitation aux investissements, la simplification et l'allègement de la fiscalité, la facilitation de la demande de raccordement aux réseaux des sociétés concessionnaires, la facilitation de l'accès au foncier, la modernisation de la justice, l'assouplissement de la législation du travail, le commerce transfrontalier et la réduction des délais de création d'entreprise."
+    - - "Comment l'APIX améliore-t-elle l'environnement des affaires ?"
+      - "L'APIX analyse perpétuellement l'environnement des affaires pour identifier les insuffisances et entraves au développement de l'initiative privée et formuler des recommandations en direction des Hautes Autorités pour éliminer ces obstacles."
+
+  services:
+    - - "Quels services l'APIX offre-t-elle aux investisseurs ?"
+      - "L'APIX offre divers services, dont la documentation en 48h, des informations sur les meilleures opportunités d'affaires, le suivi personnalisé des projets, l'assistance dans la construction d'ouvrages, et des services décentralisés dans les grandes régions du Sénégal."
+    - - "Qu'est-ce que le Guichet Unique de l'APIX ?"
+      - "Le Guichet Unique de l'APIX regroupe l'ensemble des administrations compétentes dans l'instruction et le traitement de certaines formalités et agréments, offrant aux investisseurs un cadre simplifié pour les affaires."
+
+  projets:
+    - - "Quels sont les grands projets gérés par l'APIX ?"
+      - "Parmi les grands projets gérés par l'APIX, on trouve l'Autoroute à Péage Dakar-Diamniadio, l'Aéroport International Blaise Diagne, le Centre International de Conférence de Dakar, et la Zone Économique Spéciale Intégrée de Dakar."
+    - - "Quels sont les chiffres clés de l'APIX ?"
+      - "Entre 2000 et 2015, 10 280 milliards FCFA d'investissements ont été agréés, 50 545 entreprises ont été créées depuis 2007, et 148 811 emplois prévisionnels ont été générés."
+
+  assistance:
+    - - "Comment l'APIX assiste-t-elle les investisseurs ?"
+      - "L'APIX facilite la recherche de locaux et de terrains pour l'implantation des investisseurs, et les appuie dans les démarches administratives liées à l'investissement. Elle offre également un coaching sur mesure, des services de documentation rapide, et un suivi personnalisé des projets."
+    - - "Qu'est-ce que le Bureau des Formalités Administratives et Domaniales (BFAD) ?"
+      - "Le BFAD facilite l'obtention d'autorisations, de permis ou d'agréments auprès des administrations publiques dans le cadre d'un investissement. Il traite plus de 180 procédures concernant l'accès au foncier, les formalités opérationnelles et les agréments spécialisés."

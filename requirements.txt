@@ -1,0 +1,6 @@
+flask
+pyyaml
+transformers
+torch
+numpy
+scikit-learn

@@ -1,0 +1,42 @@
+language: "fr"
+trainer: "chatterbot.trainers.ListTrainer"
+
+logic_adapters:
+  - "chatterbot.logic.BestMatch"
+
+categories:
+  général:
+    - - "Qu'est-ce que le 3FPT?"
+      - "Le Fonds de Financement de la Formation professionnelle et technique (3FPT) est une structure d’utilité publique créée par décret N°2014 1264 du 07 octobre 2014. Il est sous la tutelle du Ministère de l’Emploi, de la Formation Professionnelle, de l’Apprentissage et de l’Insertion, et sous la tutelle financière du Ministère des Finances et du Budget."
+    - - "Quel est le rôle du 3FPT?"
+      - "Le 3FPT finance la formation professionnelle et technique à travers quatre guichets d’accompagnement : la formation du personnel des entreprises, des membres des organisations professionnelles, les centres et institutions de formations, l’accompagnement des jeunes en quête de qualifications, et la mise en place d’un dispositif d’assurance qualité incluant l’établissement de normes, l’accréditation des programmes des organismes publics et privés, les audits de qualité et la publication de rapports sur les institutions."
+    - - "Combien de personnes ont été formées par le 3FPT de 2016 à 2021?"
+      - "148 307 personnes ont été formées par le 3FPT de 2016 à 2021."
+    - - "Qui est le président du Conseil d’Administration du 3FPT?"
+      - "Le président du Conseil d’Administration du 3FPT est Malick François Mamoussé GUEYE."
+
+  financement:
+    - - "Quel est le montant total des financements octroyés par le 3FPT?"
+      - "Le 3FPT a octroyé un financement total de 52 323 743 399 FCFA pour la formation professionnelle et technique."
+    - - "Quel montant a été alloué pour le financement des projets de formation des entreprises et organisations professionnelles?"
+      - "Le montant alloué pour le financement des projets de formation des entreprises et organisations professionnelles est de 8 014 397 990 FCFA."
+    - - "Combien de projets d’investissement ont été financés par le GFET?"
+      - "Le GFET a financé 50 projets d’investissement pour la construction, l’équipement et la réhabilitation des établissements de formation."
+    - - "Quels types de projets sont inclus dans le financement des demandes individuelles?"
+      - "Les types de projets inclus dans le financement des demandes individuelles comprennent la formation des populations vulnérables, la formation des apprentis, et les projets de formation insertion."
+    - - "Quels sont les secteurs d'activités financés par le GFEOP?"
+      - "Les secteurs d'activités financés par le GFEOP incluent l'agriculture, l'artisanat, les autres industries, les bâtiments et travaux publics, le commerce, l'éducation, la santé, le social, l'élevage, les industries alimentaires, les industries textiles, la pêche, les services, les télécommunications, le tourisme, l'hôtellerie, la restauration, et le transport."
+
+  programmes:
+    - - "Qu'est-ce que le guichet de financement des demandes individuelles (GFDI)?"
+      - "Le Guichet de financement des demandes individuelles (GFDI) permet à des jeunes sénégalais en quête de qualifications de bénéficier de bons de formation de courte ou moyenne durée. L’objectif est d'encourager et d’accélérer l’employabilité des jeunes."
+    - - "Combien de jeunes ont été formés par le GFDI?"
+      - "19 623 jeunes ont été formés par le GFDI."
+    - - "Qu'est-ce que le Fonds de Soutien à l'Innovation (FSI)?"
+      - "Le Fonds de Soutien à l'Innovation (FSI) est un programme de la DER/FJ qui vise à financer les projets innovants, notamment dans les domaines technologiques, pour stimuler l'innovation et la compétitivité au Sénégal."
+    - - "Quelles sont les initiatives de la DER/FJ pour les femmes?"
+      - "La DER/FJ met en place des initiatives spécifiques pour les femmes, comme des formations en entrepreneuriat, des programmes de renforcement de capacités, et des crédits dédiés pour les projets portés par des femmes."
+
+  partenaires:
+    - - "Quels sont les partenaires du 3FPT?"
+      - "Le 3FPT bénéficie de l’appui de partenaires au développement tels que la Banque mondiale, à travers l’Association internationale de développement (IDA), et l’Agence française de développement (AFD)."

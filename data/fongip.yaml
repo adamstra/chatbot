@@ -1,0 +1,26 @@
+language: "fr"
+trainer: "chatterbot.trainers.ListTrainer"
+
+logic_adapters:
+  - "chatterbot.logic.BestMatch"
+
+categories:
+  informations_generales:
+    - - "Qu'est-ce que le FONGIP ?"
+      - "Le FONGIP, ou Fonds de Garantie des Investissements Prioritaires, est un fonds public sénégalais destiné à faciliter l’accès au financement pour les PME, les jeunes entrepreneurs et les femmes."
+    - - "Quel est l'objectif principal du FONGIP ?"
+      - "L'objectif principal du FONGIP est de réduire le risque pour les institutions financières en garantissant une partie des crédits octroyés aux PME, ce qui facilite leur accès aux financements nécessaires pour leur développement."
+
+  objectifs:
+    - - "Quels sont les objectifs du FONGIP ?"
+      - "Les objectifs du FONGIP incluent l'amélioration de l'accès des PME au financement, le soutien à l'entrepreneuriat des jeunes et des femmes, et la contribution à la création d'emplois durables au Sénégal."
+
+  dispositifs:
+    - - "Quels sont les dispositifs d'accompagnement du FONGIP ?"
+      - "Le FONGIP propose plusieurs dispositifs d'accompagnement, incluant la garantie de crédits, le cofinancement, et le refinancement pour les entreprises en difficulté. Il soutient également des initiatives spécifiques comme le Fonds de Garantie pour l’Emploi des Jeunes (FGEJ) et le Fonds de Garantie pour l’Entrepreneuriat Féminin (FGEF)."
+
+  résultats:
+    - - "Quels résultats ont été obtenus par le FONGIP ?"
+      - "Le FONGIP a permis de garantir des milliers de crédits pour les PME, facilitant ainsi l'accès à des financements de plus de 100 milliards de FCFA pour les entrepreneurs sénégalais."
+    - - "Comment le FONGIP impacte-t-il l'économie sénégalaise ?"
+      - "Le FONGIP joue un rôle crucial dans le soutien aux PME, contribuant à la création d'emplois, à la diversification de l'économie, et à l'amélioration des conditions de vie des populations."

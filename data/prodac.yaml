@@ -1,0 +1,32 @@
+language: "fr"
+trainer: "chatterbot.trainers.ListTrainer"
+
+logic_adapters:
+  - "chatterbot.logic.BestMatch"
+
+categories:
+  introduction:
+    - - "Quelle est la vision du ProDAC?"
+      - "La vision du ProDAC est de transformer les zones rurales et péri-urbaines en pôles de développement économique et social à travers l’agriculture."
+
+  objectifs:
+    - - "Quels sont les objectifs principaux du ProDAC?"
+      - "Le ProDAC vise à contribuer à la croissance économique du Sénégal, à la création d’emplois, et à la génération de richesses en milieu rural et péri-urbain via l’agriculture et les activités génératrices de revenus liées aux chaînes de valeur."
+    - - "Quels sont les objectifs spécifiques du ProDAC?"
+      - "Les objectifs spécifiques incluent l’aménagement de 200 000 hectares de terres, la production de 500 000 tonnes de produits agricoles par an, et la création de 120 000 emplois directs."
+
+  composantes:
+    - - "Quelles sont les principales composantes du ProDAC?"
+      - "Les principales composantes du ProDAC incluent : 1) Aménagement et réalisation des infrastructures de production, 2) Appui à la mise en valeur et développement des capacités, et 3) Gestion-coordination, suivi-évaluation du programme."
+    - - "Quelles sont les activités incluses dans la composante d’aménagement et réalisation des infrastructures de production?"
+      - "Les activités incluent la création et le développement de Domaines Agricoles Communautaires (DAC), de Périmètres Agricoles Communautaires (PAC), et d’unités de production agroindustrielle."
+    - - "Quelles sont les activités d’appui à la mise en valeur et développement des capacités?"
+      - "Ces activités incluent la formation des jeunes entrepreneurs agricoles, l’accompagnement technique des producteurs, et la facilitation de l’accès au financement pour les agriculteurs."
+
+  partenariat:
+    - - "Avec quels organismes le ProDAC collabore-t-il?"
+      - "Le ProDAC collabore avec des partenaires tels que le Ministère de l’Agriculture et de l’Équipement rural, le Ministère de l’Économie et des Finances, et le Ministère de la Jeunesse. Il bénéficie également de l’appui de partenaires financiers internationaux comme la Banque mondiale."
+
+  résultats:
+    - - "Quels résultats ont été obtenus par le ProDAC?"
+      - "Le ProDAC a permis l’aménagement de plusieurs milliers d’hectares de terres, la formation de milliers de jeunes entrepreneurs agricoles, et la création de nombreux emplois dans les zones rurales."

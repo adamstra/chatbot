@@ -1,0 +1,79 @@
+language: "fr"
+pipeline:
+  - name: "chatterbot.logic.BestMatch"
+  - name: "chatterbot.logic.MathematicalEvaluation"
+  - name: "chatterbot.logic.TimeLogicAdapter"
+  - name: "chatterbot.logic.UnitConversion"
+
+trainer: "chatterbot.trainers.ListTrainer"
+
+storage_adapter: "chatterbot.storage.SQLStorageAdapter"
+database_uri: "sqlite:///database.sqlite3"
+
+input_adapter: "chatterbot.input.VariableInputTypeAdapter"
+output_adapter: "chatterbot.output.OutputAdapter"
+
+logic_adapters:
+  - import_path: "chatterbot.logic.BestMatch"
+    default_response: "Je suis désolé, je ne comprends pas. Pouvez-vous reformuler votre question ?"
+    maximum_similarity_threshold: 0.90
+
+preprocessors:
+  - "chatterbot.preprocessors.clean_whitespace"
+  - "chatterbot.preprocessors.convert_to_ascii"
+
+categories:
+  - name: "Présentation Générale"
+    conversations:
+      - - "Bonjour"
+        - "Bonjour, comment puis-je vous aider aujourd'hui ?"
+      - - "Pouvez-vous me parler de l'ONFP ?"
+        - "L'ONFP, ou Office National de la Formation Professionnelle, est un établissement public à caractère industriel et commercial, créé par la loi n°86-44 du 11 Août 1986. Son rôle est de promouvoir, coordonner et contrôler la formation professionnelle au Sénégal."
+
+  - name: "Missions"
+    conversations:
+      - - "Quelles sont les missions de l'ONFP ?"
+        - "L'ONFP a cinq missions principales :"
+      - - "Quelle est la mission de recherche et programmation ?"
+        - "La mission de recherche et programmation consiste à identifier les besoins en formation professionnelle et technique pour élaborer des programmes adaptés."
+      - - "Qu'est-ce que l'assistance technique ?"
+        - "L'assistance technique vise à accompagner les entreprises et les institutions dans l'analyse de leurs besoins en formation et la mise en place de solutions adaptées."
+      - - "Pouvez-vous expliquer l'animation et l'information ?"
+        - "L'animation et l'information consistent à sensibiliser et informer les acteurs de la formation professionnelle sur les opportunités et les dispositifs existants."
+      - - "Qu'entendez-vous par intervention financière ?"
+        - "L'intervention financière implique le financement partiel ou total des projets de formation professionnelle soumis par les entreprises ou les institutions."
+      - - "Qu'est-ce que l'évaluation et le contrôle ?"
+        - "L'évaluation et le contrôle visent à assurer la qualité et l'efficacité des actions de formation mises en œuvre."
+
+  - name: "Mandat et Objectifs"
+    conversations:
+      - - "Quel est le mandat de l'ONFP ?"
+        - "Le mandat de l'ONFP est de doter le travailleur ou le demandeur d'emploi, notamment dans une optique d'auto-emploi, d'une qualification ou d'un titre professionnel permettant d'occuper un emploi ou d'exercer une activité professionnelle selon les normes requises."
+      - - "Quels sont les objectifs de l'ONFP ?"
+        - "Les objectifs de l'ONFP sont de promouvoir une formation professionnelle de qualité, de renforcer les compétences des travailleurs, et de contribuer au développement économique du Sénégal."
+
+  - name: "Axes Stratégiques"
+    conversations:
+      - - "Quels sont les axes stratégiques de l'ONFP pour 2013-2015 ?"
+        - "Les axes stratégiques sont :"
+      - - "Pouvez-vous détailler l'élargissement du champ d'intervention ?"
+        - "L'élargissement du champ d'intervention vise à couvrir de nouveaux secteurs d'activité et à toucher un plus grand nombre de bénéficiaires."
+      - - "Qu'est-ce que le développement du partenariat ?"
+        - "Le développement du partenariat consiste à renforcer les collaborations avec les acteurs nationaux et internationaux de la formation professionnelle."
+      - - "Qu'entend-on par renforcement institutionnel ?"
+        - "Le renforcement institutionnel vise à améliorer les capacités organisationnelles et opérationnelles de l'ONFP pour une meilleure efficacité."
+      - - "Comment se diversifient les sources de financement ?"
+        - "La diversification des sources de financement inclut la recherche de nouveaux partenaires financiers et l'optimisation des ressources propres."
+      - - "Pourquoi améliorer la visibilité ?"
+        - "L'amélioration de la visibilité permet de mieux faire connaître les actions et les résultats de l'ONFP auprès du public et des partenaires."
+
+  - name: "Financement"
+    conversations:
+      - - "Comment l'ONFP finance ses activités ?"
+        - "Les ressources financières de l'ONFP proviennent de la CFCE à hauteur de 5%, des subventions de l'État et des Partenaires techniques et financiers. Son statut d’EPIC lui permet aussi de générer des ressources additionnelles pour financer ses activités."
+      - - "Qu'est-ce que la CFCE ?"
+        - "La CFCE, ou Contribution Forfaitaire à la Charge de l'Employeur, est une taxe prélevée sur les entreprises pour financer la formation professionnelle."
+      - - "Quels types de partenariats financiers existent ?"
+        - "Les partenariats financiers incluent les subventions des organismes internationaux, les financements des entreprises privées, et les contributions des organisations non gouvernementales."
+
+name: "Chatbot ONFP"

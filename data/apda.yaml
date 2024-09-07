@@ -1,0 +1,73 @@
+language: "fr"
+pipeline:
+  - name: "chatterbot.logic.BestMatch"
+  - name: "chatterbot.logic.MathematicalEvaluation"
+  - name: "chatterbot.logic.TimeLogicAdapter"
+  - name: "chatterbot.logic.UnitConversion"
+
+trainer: "chatterbot.trainers.ListTrainer"
+
+storage_adapter: "chatterbot.storage.SQLStorageAdapter"
+database_uri: "sqlite:///database.sqlite3"
+
+input_adapter: "chatterbot.input.VariableInputTypeAdapter"
+output_adapter: "chatterbot.output.OutputAdapter"
+
+logic_adapters:
+  - "chatterbot.logic.BestMatch"
+
+categories:
+  - name: "Emploi et Employabilité des Jeunes"
+    conversations:
+      - - "Quels sont les secteurs d’activité pourvoyeurs d’emplois au Sénégal ?"
+        - "Les principaux secteurs pourvoyeurs d'emplois au Sénégal sont l'agriculture, le commerce, l'industrie manufacturière, les TIC, le tourisme et l'artisanat."
+      - - "Quels sont les résultats des programmes d’appui à l’emploi au Sénégal ?"
+        - "Les programmes ont permis d’améliorer l’accès à des emplois de meilleure qualité, notamment dans les secteurs des services et de l’industrie."
+      - - "Quel est le taux de chômage chez les jeunes au Sénégal ?"
+        - "Le taux de chômage des jeunes de 20 à 24 ans est de 19,5% et de 17,5% pour ceux de 25 à 29 ans."
+      - - "Quels sont les défis de l’emploi des jeunes au Sénégal ?"
+        - "Les défis incluent la précarité des emplois, le manque de qualifications, l'accès limité au financement pour l'entrepreneuriat, et l'inadéquation entre l'offre et la demande."
+      - - "Quelles sont les initiatives pour améliorer l’employabilité des jeunes ?"
+        - "Les initiatives incluent des programmes de formation, des subventions pour l’entrepreneuriat, ainsi que des stages et des programmes de mentorat."
+
+  - name: "Politiques d'Emploi"
+    conversations:
+      - - "Quels sont les programmes actifs sur le marché du travail au Sénégal ?"
+        - "Les principaux programmes incluent l’ANEJ, l’AJEB, et l’ANAMA."
+      - - "Quels sont les objectifs des politiques d’emploi au Sénégal ?"
+        - "Les politiques visent à réduire le chômage, promouvoir l'entrepreneuriat et améliorer l'employabilité des jeunes."
+      - - "Quels sont les axes principaux des réformes du marché du travail ?"
+        - "Les réformes portent sur la simplification des procédures, l'amélioration de l'accès au financement et la formation professionnelle."
+
+  - name: "Statistiques et Données"
+    conversations:
+      - - "Quelle est la situation des jeunes sur le marché du travail au Sénégal ?"
+        - "La majorité des jeunes sont employés dans l’agriculture, le commerce et l’industrie manufacturière avec des emplois souvent précaires."
+      - - "Quelle est la proportion de jeunes non scolarisés au Sénégal ?"
+        - "Plus de 1,5 million d’enfants de 7 à 16 ans ne reçoivent pas d'éducation formelle."
+      - - "Quels sont les chiffres clés du marché du travail au Sénégal ?"
+        - "Le Sénégal a un taux de chômage de 10,2%, avec environ 60% de la population active employée dans le secteur informel."
+      - - "Quel est le taux de participation des jeunes au marché du travail ?"
+        - "45% des 15-24 ans et 60% des 25-35 ans participent au marché du travail."
+
+  - name: "Initiatives Gouvernementales"
+    conversations:
+      - - "Quelles agences luttent contre le chômage des jeunes au Sénégal ?"
+        - "L’ANEJ, l’AJEB, et le FNPJ sont les principales agences impliquées."
+      - - "Quels sont les programmes de formation professionnelle disponibles pour les jeunes ?"
+        - "Les jeunes peuvent bénéficier de formations techniques, en TIC, en agriculture moderne, et en artisanat."
+      - - "Comment le gouvernement soutient-il l'entrepreneuriat des jeunes ?"
+        - "Le gouvernement propose des subventions, des crédits à taux réduit et un accompagnement par des mentors expérimentés."
+
+  - name: "Impact Économique"
+    conversations:
+      - - "Quel est l’impact de la croissance démographique sur le marché du travail en Afrique ?"
+        - "La croissance démographique rapide a exacerbé les défis du marché du travail, notamment en matière de création d’emplois."
+      - - "Quels sont les principaux défis économiques liés à l'emploi des jeunes au Sénégal ?"
+        - "Les défis incluent un taux de chômage élevé, la précarité de l’emploi, et une inefficacité relative des programmes d’appui à l’emploi."
+      - - "Comment l’amélioration de l’employabilité des jeunes impacte-t-elle l’économie ?"
+        - "Elle contribue à la croissance économique en augmentant la productivité et en réduisant le chômage."
+      - - "Quels sont les effets des investissements étrangers sur le marché du travail ?"
+        - "Ils créent des emplois, améliorent les infrastructures et favorisent les transferts de technologie."
+
+name: "Chatbot Emploi Sénégal"
